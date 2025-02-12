@@ -14,7 +14,7 @@ Before you begin, ensure you have the following installed:
 1.  **Clone the repository:**
 
     ```bash
-    git clone [YOUR_REPOSITORY_URL]
+    git clone https://github.com/Osomhe1/patient-appointment-app.git
     cd patient-appointment-app
     ```
 
