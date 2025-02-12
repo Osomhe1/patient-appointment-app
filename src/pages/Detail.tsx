@@ -3,6 +3,7 @@ import AppointmentDetail from "../components/AppointmentDetail";
 import Loading from "../components/Loading";
 import ErrorMessage from "../components/ErrorMessage";
 import { useAppointmentQuery } from "../hooks/useAppointments";
+import type { Appointment } from "../types/Appointment"; // Adjust the import path as necessary
 
 function Detail() {
   const { id } = useParams<{ id: string }>();
@@ -23,7 +24,7 @@ function Detail() {
 
   return (
     <div className="container mx-auto py-8">
-      <AppointmentDetail appointment={appointment} />
+      <AppointmentDetail appointment={appointment as Appointment | undefined} />
     </div>
   );
 }
